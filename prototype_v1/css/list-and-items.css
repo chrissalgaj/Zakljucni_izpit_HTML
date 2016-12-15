@@ -1,0 +1,153 @@
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1% 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 48%;
+    max-width: 150px;
+    position: relative;
+    margin: 1%;
+}
+
+.wrapper:after {
+    display: block;
+    content: '';
+    padding-top: 140%;
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.7);
+}
+
+.item:hover .title-and-trigger {
+    opacity: 1;
+}
+.item:hover .item-actions-top {
+    opacity: 1;
+}
+
+.coverbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position:center;
+    overflow: hidden;
+}
+
+.coverbox > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.coverbox:hover > .item-actions.top {
+    top: 0;
+}
+.coverbox:hover > .item-actions.bottom {
+    bottom: 0;
+}
+
+.mini-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.title-and-trigger {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #111;
+    opacity: 0;
+    transition: 0.12s ease;
+}
+
+.item-actions-top {
+    top: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30px;
+    opacity: 1;
+    transition: 0.12s ease;
+}
+
+.item-actions-top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: #111;
+    transition: 0.12s ease-in-out;
+    z-index: 50;
+}
+
+.item-actions.top {top:-30px;}
+
+.item-actions.bottom {bottom:-30px;}
+
+.item-actions-top button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 3px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.favadd {
+    left: 3px;
+    background-image: url(../icons/ic_star_border_white_24px.svg);
+}
+.listadd {
+    right: 3px;
+    background-image: url(../icons/ic_add_circle_outline_white_24px.svg);
+}
+
+.favadd:hover {background-image: url(../icons/ic_star_white_24px.svg)!important;}
+.listadd:hover {background-image: url(../icons/ic_add_circle_white_24px.svg)!important;}
+
+.item-actions.bottom > span {
+    position: absolute;
+    top: 3px;
+    height: 24px;
+    color: whitesmoke;
+    font-family: roboto-light;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 100;
+    cursor: default;
+}
+
+.item-actions.bottom > span.relyear {
+    left: 5px;
+}
+
+.item-actions.bottom > span.rating {
+    right: 5px;
+}
+
+

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'alegreya';
+    src: url('alegreyasanssc-regular-webfont.woff2') format('woff2'),
+         url('alegreyasanssc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arimo';
+    src: url('arimo-regular-webfont.woff2') format('woff2'),
+         url('arimo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin-sans';
+    src: url('josefinsans-regular-webfont.woff2') format('woff2'),
+         url('josefinsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto-light';
+    src: url('library/Roboto-Light.ttf');
+    /*src: url('roboto-light-webfont.woff2') format('woff2'),
+         url('roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;*/
+
+}
+
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('library/Roboto-Regular.ttf');
+    /*src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;*/
+
+}
+
+@font-face {
+    font-family: 'amatic-bold';
+    src: url('library/AmaticSC-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amatic-regular';
+    src: url('library/AmaticSC-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
