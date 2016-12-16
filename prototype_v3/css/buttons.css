@@ -1,0 +1,130 @@
+.btn {
+    height: 24px;
+    width: 24px;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
+    transition: 0.12s ease;
+    margin: 4px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* LIKE BUTTON */
+
+.btn-like {
+    background-image: url(../icons/ic_favorite_border_white_24px.svg);
+}
+
+.btn-like:hover {
+    background-image: url(../icons/ic_favorite_white_24px.svg);
+}
+
+.btn-like.clicked {
+    animation: hartbeat 0.4s ease;
+    background-image: url(../icons/ic_favorite_defaultred_24px.svg);
+}
+
+@keyframes hartbeat {
+    0% {
+        background-image: url(../icons/ic_favorite_defaultred_24px.svg)
+    }
+    30% {
+        transform: scale(1.2)
+    }
+    50% {
+        transform: scale(1)
+    }
+    70% {
+        transform: scale(1.2)
+    }
+    100% {
+        transform: scale(1);
+        background-image: url(../icons/ic_favorite_defaultred_24px.svg)
+    }
+}
+
+
+/* FAVADD BUTTON */
+
+.btn-favadd {
+    background-image: url(../icons/ic_star_border_white_24px.svg);
+}
+
+.btn-favadd:hover {
+    background-image: url(../icons/ic_star_white_24px.svg);
+}
+
+.btn-favadd.clicked {
+    animation: favadd 0.4s ease forwards;
+}
+
+@keyframes favadd {
+    20% {
+        filter: drop-shadow(0px 1px 5px rgba(244, 244, 244, 0.2))
+    }
+    50% {
+        filter: drop-shadow(0px 1px 5px rgba(244, 244, 244, 0.4))
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+        background-image: url(../icons/ic_star_gold_24px.svg)
+    }
+}
+
+
+/* LISTADD BUTTON */
+
+.btn-listadd {
+    background-image: url(../icons/ic_add_circle_white_24px.svg);
+}
+
+.btn-listadd.clicked {
+    animation: listadd 0.3s linear forwards
+}
+
+@keyframes listadd {
+    0% {
+        transform: scale(1) rotate(0deg)
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg)
+    }
+    100% {
+        background-image: url(../icons/ic_remove_circle_outline_white_24px.svg);
+        transform: scale(1) rotate(360deg)
+    }
+}
+
+
+/* LISTRMV BUTTON */
+
+.btn-listrmv {
+    background-image: url(../icons/ic_remove_circle_outline_white_24px.svg)
+}
+
+.btn-listrmv.clicked {
+    animation: listrmv 0.3s linear forwards
+}
+
+@keyframes listrmv {
+    0% {
+        transform: scale(1) rotate(0deg)
+    }
+    50% {
+        transform: scale(1.2) rotate(-180deg)
+    }
+    100% {
+        background-image: url(../icons/ic_add_circle_white_24px.svg);
+        transform: scale(1) rotate(-360deg)
+    }
+}

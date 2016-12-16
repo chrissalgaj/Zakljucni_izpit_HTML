@@ -1,0 +1,1 @@
+function showFullInfo(a){fullMovieInfo.classList.add("opened")}var fullMovieInfo=document.getElementById("full_movie_data"),closeFullMovieInfo=document.getElementById("close_movie_data");closeFullMovieInfo.onclick=function(){fullMovieInfo.classList.remove("opened")};
